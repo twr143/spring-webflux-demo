@@ -1,0 +1,1 @@
+java -cp "target\spring-webflux-demo-0.0.1-SNAPSHOT.jar;target\dependency\*" com.howtodoinjava.demo.WebfluxFunctionalApp 
