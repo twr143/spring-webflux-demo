@@ -38,5 +38,8 @@ public class EmployeeService implements IEmployeeService {
     public Mono<Void> delete(Integer id) {
         return employeeRepo.deleteById(id);
     }
- 
+    public Mono<Void> deleteAll() {
+        return employeeRepo.deleteAll();
+    }
+
 }

@@ -62,5 +62,11 @@ public class EmployeeController {
     public void delete(@PathVariable("id") Integer id) {
         employeeService.delete(id).subscribe();
     }
- 
+
+    @RequestMapping(value = "/deleteAll", method = RequestMethod.DELETE)
+    @ResponseStatus(HttpStatus.OK)
+    public void delete() {
+        employeeService.deleteAll().subscribe();
+    }
+
 }

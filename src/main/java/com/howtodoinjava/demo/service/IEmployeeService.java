@@ -18,4 +18,7 @@ public interface IEmployeeService
     Mono<Employee> update(Employee e);
  
     Mono<Void> delete(Integer id);
+
+    Mono<Void> deleteAll();
+
 }
